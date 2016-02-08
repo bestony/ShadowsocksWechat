@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>SS支援插件</title>
+	<meta name="generator" content="西秦公子" />
+	<meta name="author" content="西秦公子" />
+	<meta name="keywords" content="Shadowsocks插件" />
+	<meta name="description" content="SS支援插件" />
+	<link rel="stylesheet" href="http://weui.github.io/weui/weui.css"/>
+	<link rel="stylesheet" href="http://weui.github.io/weui/example.css"/>
+</head>
+	<body ontouchstart="">
+    <div class="container js_container">
+
+		<div class="page slideIn home">
+		    <div class="hd">
+		        <h1 class="page_title">绑定账号</h1>
+		        <p class="page_desc">账号绑定后，下次登录就不需要绑定啦！</p>
+		    </div>
+		    <div class="bd">
+				 <div class="weui_cells_title">使用端口及密码登录</div>
+				 <form action='__SELF__' method='post'>
+						<div class="weui_cells weui_cells_form">
+				            <div class="weui_cell">
+				                <div class="weui_cell_hd"><label class="weui_label">端口</label></div>
+				                <div class="weui_cell_bd weui_cell_primary">
+				                    <input class="weui_input" type="number" name='port' pattern="[0-9]*" placeholder="请输入端口">
+				                </div>
+				            </div>
+				            <div class="weui_cell">
+				                <div class="weui_cell_hd"><label class="weui_label">密码</label></div>
+				                <div class="weui_cell_bd weui_cell_primary">
+				                    <input class="weui_input" name='passwd' type="number" placeholder="请输入端口密码">
+				                </div>
+				            </div>
+				            
+				        </div>
+				        <button  class="weui_btn weui_btn_primary" type="submit" >提交</button>
+			        </form>
+					<a href="{:addons_url ( 'Shadowsocks://Shadowsocks/index');}" class="weui_btn weui_btn_warn">返回</a>
+		    </div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>

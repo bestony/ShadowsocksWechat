@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+	<meta charset="utf-8" />
+	<title>SS支援插件</title>
+	<meta name="generator" content="西秦公子" />
+	<meta name="author" content="西秦公子" />
+	<meta name="keywords" content="Shadowsocks插件" />
+	<meta name="description" content="SS支援插件" />
+	<link rel="stylesheet" href="http://weui.github.io/weui/weui.css"/>
+	<link rel="stylesheet" href="http://weui.github.io/weui/example.css"/>
+</head>
+	<body ontouchstart="">
+    <div class="container js_container">
+
+		<div class="page slideIn home">
+		    <div class="hd">
+		        <h1 class="page_title">Shadow Socks</h1>
+		        <p class="page_desc">It'Time To Move</p>
+		    </div>
+		    <div class="bd">
+				 <div class="weui_cells_title">Shadowsocks Server列表</div>
+				 <div class="weui_cells weui_cells_access">
+<volist name="nodes" id="vo">
+<php>$param['id']=$vo['id']</php>
+<a class="weui_cell" href="{:addons_url ( 'Shadowsocks://Shadowsocks/serverinfo', $param );}">
+		                <div class="weui_cell_bd weui_cell_primary">
+		                    <p>{$vo.node_name}</p>
+		                </div>
+		                <div class="weui_cell_ft">{$vo.node_status}</div>
+		            </a>
+</volist>         
+		        </div>
+		        <pre>
+
+		        </pre>
+		        <div class="weui_cells_title">个人设置</div>
+				 <div class="weui_cells weui_cells_access">
+		            <a class="weui_cell" href="{:addons_url ( 'Shadowsocks://Shadowsocks/serverinfo', $param );}">
+		                <div class="weui_cell_bd weui_cell_primary">
+		                    <p>查看流量状态</p>
+		                </div>
+		                <div class="weui_cell_ft">说明文字</div>
+		            </a>
+		        </div>
+		    </div>
+		</div>
+	</div>
+
+
+
+</body>
+</html>
